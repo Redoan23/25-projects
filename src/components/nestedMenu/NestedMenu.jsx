@@ -1,5 +1,4 @@
 import MenuItems from "./menu-items";
-import MenuList from "./menu-list";
 
 
 const NestedMenu = ({ menus = [] }) => {
