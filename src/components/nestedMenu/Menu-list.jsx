@@ -1,17 +1,14 @@
 import MenuItems from "./menu-items";
 
 
-const MenuList = ({ list }) => {
-    console.log(list)
+const MenuList = ({ lists }) => {
+
     return (
-        <li className=" list-disc ">
+        <li className=" ml-10 ">
             {
-                list.label
-            }
-                        {
-                list && list.length > 0 ?
-                    list.map((list, i) =>
-                        <MenuItems key={i} items={list}>a</MenuItems>
+                lists && lists.length > 0 ?
+                    lists.map((list, i) =>
+                        <MenuItems key={i} items={list}></MenuItems>
                     )
                     :
                     null
