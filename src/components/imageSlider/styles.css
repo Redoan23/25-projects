@@ -1,0 +1,69 @@
+.slide-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    gap: 1px;
+    justify-items: center;
+    margin: auto;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 10;
+    width: 10px;
+    height: 100px;
+    color: white;
+    filter: drop-shadow(2px 2px 10px black);
+    top: 47%;
+    font-size: xx-large;
+
+}
+
+.current-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.indicator {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 9px;
+}
+
+.indicator-btn {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid rgba(229, 226, 226, 0.974);
+    transition-duration: 500ms;
+}
+
+.arrow-left {
+    left: 5%;
+}
+
+.arrow-right {
+    right: 10%;
+}
+
+.inactiveImage {
+    display: none;
+}
+
+.inactiveIndicator {
+    background-color: rgba(117, 117, 117, 0.508);
+    transition: all;
+    animation-duration: 300ms;
+    transform: scale(0.99)
+}
+
+.activeIndicator {
+    transform:skewX() ;
+    transition: 600ms ease-in-out;
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "question": "What is React.js, and why is it popular?",
+        "answer": "React.js is a JavaScript library used for building user interfaces, particularly single-page applications. It's popular because of its efficient rendering using the virtual DOM, component-based architecture, and ease of use."
+    },
+    {
+        "id": 2,
+        "question": "How does JavaScript handle asynchronous operations?",
+        "answer": "JavaScript handles asynchronous operations using callbacks, promises, and async/await. These allow the code to execute non-blocking operations, such as API calls, without freezing the main thread."
+    },
+    {
+        "id": 3,
+        "question": "What is the purpose of state in React components?",
+        "answer": "State is used to manage data that changes over time in a React component. It allows React to re-render components when the data (state) changes, ensuring the UI stays in sync with the application data."
+    },
+    {
+        "id": 4,
+        "question": "How does MongoDB store data, and why is it considered a NoSQL database?",
+        "answer": "MongoDB stores data in flexible, JSON-like documents instead of rows and tables. It’s considered a NoSQL database because it doesn’t rely on a fixed schema, which allows for more flexibility in handling large and diverse datasets."
+    },
+    {
+        "id": 5,
+        "question": "What are the advantages of using Tailwind CSS in a project?",
+        "answer": "Tailwind CSS provides utility-first classes that simplify styling by allowing you to build responsive designs without writing custom CSS. This speeds up development and ensures consistency across the application."
+    }
+]
