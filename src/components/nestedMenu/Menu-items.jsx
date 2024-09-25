@@ -5,11 +5,17 @@ import MenuList from "./menu-list";
 const MenuItems = ({ items = [] }) => {
 
     const [showNavLink, setShowNavLink] = useState(false)
+    const [showCUrrentChild, setShowCurrentChild] = useState({})
     console.log(showNavLink);
 
     return (
         <ul>
-            <p onClick={() => setShowNavLink(!showNavLink)}>{items.label}</p>
+            <p onClick={() => setShowNavLink(!showNavLink)} className=" flex gap-3 justify-center">
+                {items.label}
+                {
+                    items && items.children && items.children.length > 0 && <span className=" font-bold">+</span>
+                }
+            </p>
             <div>
                 {
                     items && items.children && items.children.length > 0 ?
@@ -21,7 +27,7 @@ const MenuItems = ({ items = [] }) => {
                 }
             </div>
 
-        </ul>
+        </ul >
     );
 };
 
