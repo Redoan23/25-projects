@@ -5,6 +5,7 @@ import routes from './components/nestedMenu/data';
 import NestedMenu from './components/nestedMenu/NestedMenu';
 import RandomColor from './components/randomColor/RandomColor';
 import RatingStar from './components/ratingStar/RatingStar';
+import ThemeSwitch from './components/themeSwitch/ThemeSwitch';
 
 const App = () => {
   return (
@@ -22,8 +23,11 @@ const App = () => {
         {/* <div className=' mt-4 text-center mx-auto'>
           <ImageSlider url={'https://picsum.photos/v2/list?page=3&limit=10'} ></ImageSlider>
         </div> */}
-        <div className=' mt-4 text-center mx-auto'>
+        {/* <div className=' mt-4 text-center mx-auto'>
           <NestedMenu menus={routes}></NestedMenu>
+        </div> */}
+        <div className=' mt-4 text-center mx-auto'>
+          <ThemeSwitch></ThemeSwitch>
         </div>
 
       </div>

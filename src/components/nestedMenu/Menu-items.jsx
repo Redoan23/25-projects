@@ -9,12 +9,12 @@ const MenuItems = ({ items = [] }) => {
 
     const handleChildren = (getCurrentLabel) => {
         setShowCurrentChild({
-            ...showCUrrentChild,
             [getCurrentLabel]: !showCUrrentChild[getCurrentLabel]
         }
         )
     }
 
+    console.log(showCUrrentChild)
 
     // we can do this in both way setting just a state or a bit complex one is the taking an empty object then toggling between true or false
     // for object we must remember that we can use the bracket method to get a child as like as the dot method.
@@ -23,7 +23,7 @@ const MenuItems = ({ items = [] }) => {
 
     return (
         <ul>
-            <p onClick={() => handleChildren(items.label)} className=" flex gap-3 justify-center">
+            <p onClick={() => handleChildren(items.label)} className=" flex gap-3 justify-center" >
                 {items.label}
                 {
                     items && items.children && items.children.length > 0 && <span className=" font-bold">
