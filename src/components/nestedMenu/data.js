@@ -16,8 +16,14 @@ export const routes = [
                         to: "/location",
                         children: [
                             {
-                                label: "newCHild",
-                                to: "/child",
+                                label: "New Child",
+                                to: "/newChild",
+                                children: [
+                                    {
+                                        label: "Next Child",
+                                        to :'/nextChild'
+                                    }
+                                ]
                             },
                         ],
                     },
