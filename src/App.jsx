@@ -5,6 +5,7 @@ import routes from './components/nestedMenu/data';
 import NestedMenu from './components/nestedMenu/NestedMenu';
 import RandomColor from './components/randomColor/RandomColor';
 import RatingStar from './components/ratingStar/RatingStar';
+import ScrollIndicator from './components/scrollIndicator/ScrollIndicator';
 import ThemeSwitch from './components/themeSwitch/ThemeSwitch';
 
 const App = () => {
@@ -26,8 +27,11 @@ const App = () => {
         {/* <div className=' mt-4 text-center mx-auto'>
           <NestedMenu menus={routes}></NestedMenu>
         </div> */}
-        <div className=' mt-4 text-center mx-auto'>
+        {/* <div className=' mt-4 text-center mx-auto'>
           <ThemeSwitch></ThemeSwitch>
+        </div> */}
+        <div className=' mt-4 text-center mx-auto'>
+          <ScrollIndicator url={'https://dummyjson.com/products?limit=170'}></ScrollIndicator>
         </div>
 
       </div>
