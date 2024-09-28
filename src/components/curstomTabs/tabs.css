@@ -1,0 +1,29 @@
+.label-container{
+    display: flex;
+    /* border-bottom: 1px solid black; */
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
+
+.individual-label{
+    /* background-color: skyblue ; */
+    padding: 2px 41px;
+    border-bottom: 1px solid black;
+}
+
+/* .individual-label:hover{
+    background: green;
+    color: white  !important;
+} */
+
+.activeTab{
+    border: 1px solid black;
+    border-bottom: 0px;
+    transition: all 0.1s ;
+    background-color: white;
+}
+
+.mouseOver{
+    background: gray;
+}

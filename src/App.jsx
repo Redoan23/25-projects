@@ -1,5 +1,6 @@
 
 import Accordian from './components/accordian/Accordian';
+import TabWrapper from './components/curstomTabs/TabWrapper';
 import ImageSlider from './components/imageSlider/ImageSlider';
 import routes from './components/nestedMenu/data';
 import NestedMenu from './components/nestedMenu/NestedMenu';
@@ -30,8 +31,11 @@ const App = () => {
         {/* <div className=' mt-4 text-center mx-auto'>
           <ThemeSwitch></ThemeSwitch>
         </div> */}
+        {/* <div className=' mt-4 text-center mx-auto'>
+          <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}></ScrollIndicator>
+        </div> */}
         <div className=' mt-4 text-center mx-auto'>
-          <ScrollIndicator url={'https://dummyjson.com/products?limit=170'}></ScrollIndicator>
+          <TabWrapper></TabWrapper>
         </div>
 
       </div>
