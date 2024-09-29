@@ -16,6 +16,10 @@ const TabWrapper = () => {
             label: 'Tab 3',
             content: 'content of tab 3'
         },
+        {
+            label: 'Tab 4',
+            content: 'content of tab 4'
+        },
     ]
 
     

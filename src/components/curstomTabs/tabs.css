@@ -1,29 +1,36 @@
-.label-container{
+.label-container {
     display: flex;
-    /* border-bottom: 1px solid black; */
     color: black;
     justify-content: center;
     text-align: center;
 }
 
-.individual-label{
-    /* background-color: skyblue ; */
+.individual-label {
     padding: 2px 41px;
-    border-bottom: 1px solid black;
+    /* transition: all 1s ; */
+    
 }
 
-/* .individual-label:hover{
-    background: green;
-    color: white  !important;
-} */
-
-.activeTab{
-    border: 1px solid black;
-    border-bottom: 0px;
-    transition: all 0.1s ;
-    background-color: white;
+.activeTab {
+    background-color: skyblue;
+    animation-name: tabAnimation;
+    animation-duration:.4s;
 }
 
-.mouseOver{
-    background: gray;
+@keyframes tabAnimation {
+    0% {
+        background-color: skyblue;
+        transform:translateX(0px);
+        rotate: 7deg;
+    }
+
+    50%{
+       
+    }
+
+    100% {
+        background-color: skyblue;
+        transform:translateX(10px);
+        rotate: -4deg;
+    }
 }

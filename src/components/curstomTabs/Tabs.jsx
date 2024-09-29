@@ -13,7 +13,7 @@ const Tabs = ({ tabContents = [] }) => {
                     tabContents && tabContents.length > 0 && tabContents.map((tab, index) =>
                         <div key={tab.label}
                             onClick={() => setCurrenIndex(index)}
-                            className={`individual-label ${currentIndex === index ? 'activeTab' : ''} ${onmouseover ? 'mouseOver' : ''}`} >
+                            className={`individual-label ${currentIndex === index ? 'activeTab' : 'inactiveTab'} ${onmouseover ? 'mouseOver' : ''}`} >
                             {tab.label}
                         </div>
                     )
